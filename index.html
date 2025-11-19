@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <form class="publicicacion" id="publicicacion">
-        <p class="h1 text-center m-5">Simulador Red Social</p>
-        <div class="form-floating mb-1">
-            <input type="text" class="form-control" id="tittle" placeholder="titulo">
-            <label for="tittle">Titulo</label>
-        </div>
-        <div class="form-floating mb-3">
-            <textarea class="form-control" id="description" placeholder="Password"></textarea>
-            <label for="description">Description</label>
-        </div>
 
-        <button type="submit" class="btn btn-outline-dark w-100">Submit</button>
-    </form>
+    <div class="container w-75 mx-auto mb-3">
+        <form class="publicicacion" id="publicicacion">
+            <p class="h1 text-center m-5">Simulador Red Social</    p>
+            <div class="form-floating mb-1">
+                <input type="text" class="form-control"     id="tittle" placeholder="titulo">
+                <label for="tittle">Titulo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="description"     placeholder="Password"></textarea>
+                <label for="description">Description</label>
+            </div>
 
-    <div class="card my-5" >
+            <button type="submit" class="btn btn-outline-dark w-100 mb-3">Submit</button>
+        </form>
+    </div>
+
+    <div class="card w-75 mx-auto" >
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+            <p class="card-text"></p>                
+            <a href="#" class="btn btn-outline-dark"><i class="bi bi-balloon-heart"></i></a>
         </div>
     </div>
+
     <script src="" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
