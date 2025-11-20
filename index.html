@@ -14,10 +14,12 @@
 <body>
     <main class="main">
         <div class="container w-75 my-5">
-            <form class="publicacion p-1" id="publicicacion">
-                <p class="h1 text-center m-3">Simulador Red Social</>
+            <div class="text-end m-3">
+            <i class="bi bi-plus-square-fill fs-3 m-2 position-fixed top-0 end-0" onclick="mostrarForm()" id="t-form">Crear Publicacion</i>
+            </div>
+            <form class="publicacion p-4 my-3" id="publicacion">
                 <div class="form-floating mb-1">
-                    <input type="text" class="form-control"     id="tittle" placeholder="titulo">
+                    <input type="text" class="form-control"  id="tittle" placeholder="titulo">
                     <label for="tittle">Titulo</label>
                 </div>
 
@@ -26,30 +28,21 @@
                     <label for="description">Description</label>
                 </div>
                 <div class="form-floating mb-1">
-                    <input type="file" class="form-control"     id="file" accept="image/">
-                    <label for="tittle">Titulo</label>
+                    <input type="file" class="form-control"  id="file" accept="image/*">
+                    <label for="file">Archivo</label>
                 </div>
 
-                <button type="submit" class="btn btn-outline-dark w-100 mb-5">Submit</button>
+                <button type="submit" 
+                class="btn btn-outline-dark w-100 mb-2">Submit</button>
             </form>
         </div>
 
-        <div class="publicaciones">
-            <div class="card w-75 mx-auto" >
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>                
-                    <a href="#" class="btn btn-outline-dark"><i class="bi bi-balloon-heart"></i></a>
-                </div>
-            </div>
+        <div id="publicaciones" class="mt-5">
         </div>
 
     </main>
 
-
-    <script src="" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+<script src="main.js"></script>
 </body>
 
 </html>

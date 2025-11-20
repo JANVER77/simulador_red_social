@@ -2,8 +2,18 @@ body {
     background-color: #b3b3af;
 }
 
+.publicacion {
+    display: none;
+}
+
 .container, .card {
     background-color: #F8F8F8;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0,0,0, 0.7);
+}
+
+.card {
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
 }
