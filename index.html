@@ -12,31 +12,41 @@
 </head>
 
 <body>
+    <main class="main">
+        <div class="container w-75 my-5">
+            <form class="publicacion p-1" id="publicicacion">
+                <p class="h1 text-center m-3">Simulador Red Social</>
+                <div class="form-floating mb-1">
+                    <input type="text" class="form-control"     id="tittle" placeholder="titulo">
+                    <label for="tittle">Titulo</label>
+                </div>
 
-    <div class="container w-75 mx-auto mb-3">
-        <form class="publicicacion" id="publicicacion">
-            <p class="h1 text-center m-5">Simulador Red Social</    p>
-            <div class="form-floating mb-1">
-                <input type="text" class="form-control"     id="tittle" placeholder="titulo">
-                <label for="tittle">Titulo</label>
-            </div>
-            <div class="form-floating mb-3">
-                <textarea class="form-control" id="description"     placeholder="Password"></textarea>
-                <label for="description">Description</label>
-            </div>
+                <div class="form-floating mb-1">
+                    <textarea class="form-control" id="description"     placeholder="Password"></textarea>
+                    <label for="description">Description</label>
+                </div>
+                <div class="form-floating mb-1">
+                    <input type="file" class="form-control"     id="file" accept="image/">
+                    <label for="tittle">Titulo</label>
+                </div>
 
-            <button type="submit" class="btn btn-outline-dark w-100 mb-3">Submit</button>
-        </form>
-    </div>
-
-    <div class="card w-75 mx-auto" >
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>                
-            <a href="#" class="btn btn-outline-dark"><i class="bi bi-balloon-heart"></i></a>
+                <button type="submit" class="btn btn-outline-dark w-100 mb-5">Submit</button>
+            </form>
         </div>
-    </div>
+
+        <div class="publicaciones">
+            <div class="card w-75 mx-auto" >
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>                
+                    <a href="#" class="btn btn-outline-dark"><i class="bi bi-balloon-heart"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
 
     <script src="" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
