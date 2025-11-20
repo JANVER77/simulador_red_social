@@ -36,22 +36,20 @@ function createPublic(t, d, f){
     const urlImg = URL.createObjectURL(f);
     const publicaciones = document.getElementById("publicaciones");
 
-    const publicacionCard =  `
-        <div class="w-100">
-            <div class="card w-50 mx-auto mb-4" id="card${cardId}">
-                <img src="${urlImg}" class="card-img-top" style="width: 100%; height: auto; object-fit: contain;">
+const publicacionCard =  `
+    <div class="card w-50 mx-auto mb-4" id="card${cardId}">
+        <img src="${urlImg}" class="card-img-top" style="width: 100%; height: auto; object-fit: contain;">
 
-                <div class="card-body">
-                    <h5 class="card-title">${t}</h5>
-                    <p class="card-text">${d}</p>                
-                    <a href="#" class="btn btn-outline-dark" onclick="likes(${cardId})">
-                    <i class="bi bi-balloon-heart" id="corazon${cardId}"></i>
-                    <span id="contLikes${cardId}" class="ms-1">0</span></a>
-                    <button class="btn btn-outline-danger btn-sm float-end" onclick="delPublicacion(${cardId})">Eliminar</button>
-                </div>
-            </div>
+        <div class="card-body">
+            <h5 class="card-title">${t}</h5>
+            <p class="card-text">${d}</p>                
+            <a href="#" class="btn btn-outline-dark" onclick="likes(${cardId})">
+            <i class="bi bi-balloon-heart" id="corazon${cardId}"></i>
+            <span id="contLikes${cardId}" class="ms-1">0</span></a>
+            <button class="btn btn-outline-danger btn-sm float-end" onclick="delPublicacion(${cardId})">Eliminar</button>
         </div>
-    `;
+    </div>
+`;
 
 
     publicaciones.innerHTML = publicacionCard + publicaciones.innerHTML
@@ -60,7 +58,7 @@ function createPublic(t, d, f){
 
 function delPublicacion(id) {
     const card = document.getElementById('card' + id);
-    const img = document.getElementById('img' + id);
+    const img = document.getElementById('corazon' + id);
     URL.revokeObjectURL(img.src);
     card.remove();
 }
